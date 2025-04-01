@@ -34,7 +34,7 @@ class _ApiListViewState extends State<ApiListView> {
       final List<dynamic> data = jsonDecode(response.body);
       return data.map((json) => Post.fromJson(json)).toList();
     } else {
-      throw Exception('データの取得に失敗しました');
+      throw Exception('データの取得に失敗しました!');
     }
   }
 
